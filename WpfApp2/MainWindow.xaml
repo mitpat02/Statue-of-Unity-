@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Canvas>
+            <Rectangle HorizontalAlignment="Center" Margin="0,53,0,0" Stroke="Black" VerticalAlignment="Top" Width="800"/>
+            <Label Content="Welcome To Statue of Unity – Tickets and information’s " HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Canvas.Left="185" Canvas.Top="10"/>
+            <TextBox x:Name="tbName" Canvas.Left="168" TextWrapping="Wrap" Text=" " Canvas.Top="92" Width="142" RenderTransformOrigin="0.304,0.392" Height="25"/>
+            <TextBox x:Name="tbMobile" Canvas.Left="168" TextWrapping="Wrap" Text=" " Canvas.Top="141" Width="142" RenderTransformOrigin="0.304,0.392" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <TextBox x:Name="tbQtyTicket" Canvas.Left="168" TextWrapping="Wrap" Text=" " Canvas.Top="181" Width="142" RenderTransformOrigin="0.304,0.392" Height="25" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+            <TextBox x:Name="tbEmail" Canvas.Left="168" TextWrapping="Wrap" Text=" " Canvas.Top="230" Width="142" RenderTransformOrigin="0.304,0.392" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Label Content="Name" Canvas.Left="92" Canvas.Top="92" FontSize="14" FontWeight="Bold"/>
+            <Label Content="Mobile" Canvas.Left="88" Canvas.Top="137" RenderTransformOrigin="0.487,0.04" FontWeight="Bold" FontSize="14"/>
+            <Label Content="No of Ticket" Canvas.Left="50" Canvas.Top="177" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+            <Label Content="E-mail" Canvas.Left="70" Canvas.Top="230" FontWeight="Bold" FontSize="14"  />
+            <Label Content="Registered Now and  get 10% OFF" Canvas.Left="442" Canvas.Top="76" FontFamily="HP Simplified" FontStyle="Italic" Height="26" Width="187"/>
+            <Button x:Name="btnRegister" Content="Register" Canvas.Left="480" Canvas.Top="122" HorizontalAlignment="Left" VerticalAlignment="Top" Width="111" Height="20" Click="btnRegister_Click"/>
+            <Button x:Name="btnBook" Content="Book" Canvas.Left="168" Canvas.Top="290" HorizontalAlignment="Left" VerticalAlignment="Top" Width="138" Height="30" Click="Button_Click"/>
+            <!--This TextBlock will be removed, and add another window.-->
+            <TextBlock x:Name="textblockBill" Canvas.Left="400" TextWrapping="Wrap" Text="BILL" Canvas.Top="191" Height="197" Width="313" HorizontalAlignment="Center" VerticalAlignment="Top" Background="#FFC3B6B6" TextAlignment="Center" FontFamily="Bahnschrift Condensed"/>
+            <Label x:Name="lblRegistersuccess" Content="" Canvas.Left="432" Canvas.Top="147" HorizontalAlignment="Left" VerticalAlignment="Center" Width="250"/>
+
+
+
+        </Canvas>
+    </Grid>
+</Window>
